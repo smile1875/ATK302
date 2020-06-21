@@ -1,24 +1,22 @@
-for(i=0;i<8;i++){
-    for(j=0;j<8;j++){
-      if(i%2==0){
-    if(j%2==1){
-      fill(0);
-  rect(25+50*i,25+50*j,50,50)
+function setup() {
+  createCanvas(800, 800);
+  textAlign(CENTER) ;
+  textSize(32) ;
+}
 
-  }
-    else{fill(255);
-      rect(25+50*i,25+50*j,50,50);
+function draw() {
+
+  ellipse(mouseX,mouseY,random(100,200),random(100,200));
+
+  push() ;
+  fill('black') ;
+  text("COLORFUL SNAKE!", width/2, 700 );
+  pop() ;
 
 }
-}
-  else {if(j%2==0){fill(0);
-         rect(25+50*i,25+50*j,50,50);
-         }
-        else{fill(255);
-         rect(25+50*i,25+50*j,50,50);
-         }
 
-       }
-    }
+function mouseReleased(){
+  fill(random(255),random(255),random(255));
+  ellipse(mouseX,mouseY,random(100,200),random(100,200));
 
 }
