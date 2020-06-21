@@ -1,4 +1,3 @@
-
 var img1, img2, img3;
 
 function setup() {
