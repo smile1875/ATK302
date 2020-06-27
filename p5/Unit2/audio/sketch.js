@@ -1,6 +1,6 @@
 var mic;
 var vol;
-var y = 0 ;
+
 
 function setup() {
   createCanvas(800, 800);
