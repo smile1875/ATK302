@@ -4,10 +4,11 @@ let img2 ;
 let img3 ;
 
 function setup() {
-  createCanvas(270, 570);
+  createCanvas(511, 1080);
   img1 = loadImage("assets/1.jpg") ;
   img2 = loadImage("assets/2.jpg") ;
   img3 = loadImage("assets/3.jpg") ;
+//  imageMode(CENTER) ;
 }
 
 function draw() {
@@ -15,7 +16,7 @@ function draw() {
   switch (state) {
     case 0:
       background('purple');
-      image(img1,0,0,270,570) ;
+      image(img1,0,0,511,1080) ;
       text("When life is shit,turn the music up.", 100, 100);
       break;
 
