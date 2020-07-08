@@ -49,8 +49,8 @@ function draw() {
   xPosition = map(gamma, -18, 18, 0, width);
   yPosition = map(beta, 25, 45, 0, height);
 
-  xPosition = mouseX ;
-  yPosition = mouseY ;
+  //xPosition = mouseX ;
+  //yPosition = mouseY ;
 
   push(); // before you use translate, rotate, or scale commands, push and then pop after
   translate(xPosition, yPosition); // move everything over by x, y
